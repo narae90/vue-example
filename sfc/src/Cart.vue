@@ -44,25 +44,25 @@ export default {
         "bought-list": BoughtList,
         "cart-input": CartInput
     },
-            methods: {
-                addItem: function(item) {
-                    console.log("추가할 아이템:", item);
-                    //  배열에 아이템 추가
-                    this.items.push({
-                        name: item,
-                        buy: false
-                    })
-                },
-                removeItem: function(item) {
-                    var index = this.items.indexOf(item);
-                    if (index > -1) {   //  인덱스
-                        //  배열에서 요소 삭제
-                        this.items.splice(index, 1);
-                    }
-                }
+    methods: {
+        addItem: function(item) {
+            console.log("추가할 아이템:", item);
+            //  배열에 아이템 추가
+            this.items.push({
+                name: item,
+                buy: false
+            })
+        },
+        removeItem: function(item) {
+            var index = this.items.indexOf(item);
+            if (index > -1) {   //  인덱스
+                //  배열에서 요소 삭제
+                this.items.splice(index, 1);
             }
+        }
+    }
             
-        };    
+};    
 
 </script>
 

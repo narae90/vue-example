@@ -9,14 +9,14 @@ export default new Router({
   mode: 'history',
   routes: [
     {
-    path: '/',
-    name: 'HelloWorld',
-    component: HelloWorld
+      path: '/',
+      name: 'HelloWorld',
+      component: HelloWorld
     },
     {
-    path: '/channel/:cname',
-    name: 'channel',
-    component: Chat
+      path: '/channel/:cname',
+      name: 'channel',
+      component: Chat
     }
   ]
-});
+})

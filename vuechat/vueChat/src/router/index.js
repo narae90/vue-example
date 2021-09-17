@@ -11,12 +11,12 @@ export default new Router({
     {
       path: '/',
       name: 'HelloWorld',
-      component: 'HelloWorld'
+      component: HelloWorld
     },
     {
       path: '/channel/:cname',
       name: 'channel',
-      component: 'Chat'
+      component: Chat
     }
   ]
 })
